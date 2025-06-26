@@ -14,9 +14,11 @@ body{
 #top-bar{
     display: flex;
     align-items: center;
+    flex-grow: 1;
     height:50px;
     gap:10px;
-    padding:30px;
+    padding:20px;
+    border-bottom: dotted cyan 3px;
 }
 .main-thing{
     flex-grow: 10;
@@ -47,24 +49,43 @@ img{
     flex-shrink: 0;
 }
 .welcome{
-    font-size: 30px;
-}
-button{
-    border-radius:5px;
-    width:fit-content
+    font-size: 50px;
 }
 .intro{
     font-size: 50px;
 }
-#two, #three{
+#two, #four{
     color:black;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#three{
+#four{
     background-color: lightgray;
+    padding-top: 10px;
 }
 .about{
     width:50vw;
+    font-size: 30px;
+}
+#sayer{
+    text-align: end;
+    margin-left: 60%;
+}
+#three{
+    color: black;
+    border-top: solid black 1px;
+}
+#flex{
+    font-size: 40px;
+    margin: 5px auto 5px 10px;
+}
+#five{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: darkblue;
+    font-size:30px;
+    padding-left: 3%;
 }
