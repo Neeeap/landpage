@@ -1,28 +1,28 @@
-body{
+body, #tabs, #one-text, #two,#four,#clarify{
     display: flex;
     flex-direction: column;
+}
+#top-bar, #two,#four,#clarify{
+    align-items: center;
+}
+body{
     color: white;
     height:100vh;
     font-family: 'Roboto';
     margin:0;
 }
 #tabs{
-    display: flex;
-    flex-direction: column;
     flex:1 1 0;
 }
 #top-bar{
-    display: flex;
-    align-items: center;
     flex-grow: 1;
-    height:50px;
+    height:fit-content;
     gap:10px;
-    padding:20px;
     border-bottom: dotted cyan 3px;
 }
 .main-thing{
-    flex-grow: 10;
     font-size: 40px;
+    margin:10px 0;
 }
 #one, #five, #top-bar{
     background-color: darkblue;
@@ -42,24 +42,18 @@ img{
     flex: 1 1 auto;
 }
 #one-text{
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     width: 40vw;
     flex-shrink: 0;
 }
-.welcome{
+.welcome, .intro{
     font-size: 50px;
 }
 .intro{
-    font-size: 50px;
     margin-bottom:10px;
 }
 #two, #four{
     color:black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 #four{
     background-color: lightgray;
@@ -93,8 +87,5 @@ a{
 }
 #clarify{
     font-size: 10px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
